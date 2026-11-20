@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -17,16 +18,21 @@
     <script type="text/javascript" src="file/function.js" charset="utf-8"></script>
     <script type="text/javascript" src="file/love.js" charset="utf-8"></script>
 </head>
+
 <body>
     <audio id="myAudio" preload="metadata" loop>
         <source src="aud.mp3" type="audio/mpeg">
     </audio>
-    <button class="music-toggle" id="music-toggle" type="button" aria-label="Play birthday music" aria-pressed="false" title="Play birthday music">
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Play birthday music" aria-pressed="false"
+        title="Play birthday music">
         <span class="music-note" aria-hidden="true">♫</span>
-        <span class="music-copy"><span>Birthday soundtrack</span><small id="music-status" aria-live="polite">Off</small></span>
+        <span class="music-copy"><span>Birthday soundtrack</span><small id="music-status"
+                aria-live="polite">Off</small></span>
     </button>
     <div id="main">
-        <div id="error"><a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a> (<a href="http://firefox.com.cn/download/">Firefox</a>)</div>
+        <div id="error"><a
+                href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a> (<a
+                href="http://firefox.com.cn/download/">Firefox</a>)</div>
         <div id="wrap">
             <span class="heart-flare" id="heart-flare" aria-hidden="true"></span>
             <div id="text">
@@ -35,8 +41,10 @@
                     <span class="say"><strong>Happy Birthday! 🎂🎈</strong></span>
                     <span class="say">May God bless you with endless happiness, good health, and success. 🍀</span>
                     <span class="say">Keep smiling, keep shining, and keep being the awesome person you are! ❤️</span>
-                    <span class="say">Here's to more hackathons, class bunks, crazy parties, and unforgettable B.Tech memories! 😂</span>
-                    <span class="say">Just saying... you're genuinely one of the best people I've met in college. 🤝</span>
+                    <span class="say">Here's to more hackathons, class bunks, crazy parties, and unforgettable B.Tech
+                        memories! 😂</span>
+                    <span class="say">Just saying... you're genuinely one of the best people I've met in college.
+                        🤝</span>
                     <span class="say">Sending you lots of good vibes, laughter, and a little birthday madness! 😏</span>
                     <span class="say"><strong>Have an amazing day, bro! ❤️🥳</strong></span>
                 </div>
@@ -47,7 +55,8 @@
             <div id="clock-box">
                 <span id="clock">577 days 0 hours 0 minutes 0 seconds</span> <!-- Change to "6940 days..." if needed -->
             </div>
-            <canvas id="canvas" width="1100" height="680" role="button" tabindex="0" aria-label="Click the heart to grow the birthday tree for Raj"></canvas>
+            <canvas id="canvas" width="1100" height="680" role="button" tabindex="0"
+                aria-label="Click the heart to grow the birthday tree for Raj"></canvas>
         </div>
     </div>
 
@@ -60,16 +69,36 @@
             </header>
             <div class="memory-grid" aria-label="College memory photos">
                 <button class="memory-photo" type="button" aria-label="Open memory photo 1">
-                    <img src="memory/WhatsApp Image 2026-11-20 at 11.57.48 PM.jpeg" alt="College memory photo 1" width="4080" height="3060" loading="lazy" decoding="async">
+                    <img src="memory/IMG_20251105_114825.jpg"
+                        alt="Four friends taking a selfie in a classroom; a certificate is partly visible in the foreground."
+                        width="3264" height="2448" loading="lazy" decoding="async">
                     <span class="photo-index" aria-hidden="true">01</span>
                 </button>
                 <button class="memory-photo" type="button" aria-label="Open memory photo 2">
-                    <img src="memory/WhatsApp Image 2026-11-20 at 11.57.48 PM (1).jpeg" alt="College memory photo 2" width="3060" height="4080" loading="lazy" decoding="async">
+                    <img src="memory/IMG_20251105_140049.jpg"
+                        alt="Friends sitting together in a classroom, looking toward the camera." width="3264"
+                        height="2448" loading="lazy" decoding="async">
                     <span class="photo-index" aria-hidden="true">02</span>
                 </button>
                 <button class="memory-photo" type="button" aria-label="Open memory photo 3">
-                    <img src="memory/WhatsApp Image 2026-11-20 at 11.57.49 PM.jpeg" alt="College memory photo 3" width="1600" height="1200" loading="lazy" decoding="async">
+                    <img src="memory/IMG_20251106_132439.jpg" alt="Three friends taking a selfie in a classroom."
+                        width="3264" height="2448" loading="lazy" decoding="async">
                     <span class="photo-index" aria-hidden="true">03</span>
+                </button>
+                <button class="memory-photo" type="button" aria-label="Open memory photo 4">
+                    <img src="memory/WhatsApp Image 2026-11-20 at 11.57.48 PM.jpeg" alt="College memory photo 4"
+                        width="4080" height="3060" loading="lazy" decoding="async">
+                    <span class="photo-index" aria-hidden="true">04</span>
+                </button>
+                <button class="memory-photo" type="button" aria-label="Open memory photo 5">
+                    <img src="memory/WhatsApp Image 2026-11-20 at 11.57.48 PM (1).jpeg" alt="College memory photo 5"
+                        width="3060" height="4080" loading="lazy" decoding="async">
+                    <span class="photo-index" aria-hidden="true">05</span>
+                </button>
+                <button class="memory-photo" type="button" aria-label="Open memory photo 6">
+                    <img src="memory/WhatsApp Image 2026-11-20 at 11.57.49 PM.jpeg" alt="College memory photo 6"
+                        width="1600" height="1200" loading="lazy" decoding="async">
+                    <span class="photo-index" aria-hidden="true">06</span>
                 </button>
             </div>
             <div class="section-action">
@@ -84,7 +113,8 @@
         <canvas class="celebration-particles" id="celebration-particles" aria-hidden="true"></canvas>
         <div class="finale-content">
             <p class="eyebrow">HERE’S TO WHAT COMES NEXT</p>
-            <h2 id="finale-title" tabindex="-1">More hackathons.<br>More laughter.<br><em>More stories together.</em></h2>
+            <h2 id="finale-title" tabindex="-1">More hackathons.<br>More laughter.<br><em>More stories together.</em>
+            </h2>
             <p class="finale-note">Happy Birthday, Raj. ❤️</p>
             <button class="replay-button" id="replay-experience" type="button">
                 <span aria-hidden="true">↺</span> Replay the surprise
@@ -98,194 +128,195 @@
     </dialog>
 
     <script>
-    (function() {
-        var canvas = $('#canvas');
+        (function () {
+            var canvas = $('#canvas');
 
-        if (!canvas[0].getContext) {
-            $("#error").show();
-            return false;
-        }
+            if (!canvas[0].getContext) {
+                $("#error").show();
+                return false;
+            }
 
-        var width = canvas[0].width;
-        var height = canvas[0].height;
-        canvas.attr("width", width);
-        canvas.attr("height", height);
+            var width = canvas[0].width;
+            var height = canvas[0].height;
+            canvas.attr("width", width);
+            canvas.attr("height", height);
 
-        function canvasPoint(e) {
-            var bounds = canvas[0].getBoundingClientRect();
-            return {
-                x: (e.clientX - bounds.left) * canvas[0].width / bounds.width,
-                y: (e.clientY - bounds.top) * canvas[0].height / bounds.height
-            };
-        }
+            function canvasPoint(e) {
+                var bounds = canvas[0].getBoundingClientRect();
+                return {
+                    x: (e.clientX - bounds.left) * canvas[0].width / bounds.width,
+                    y: (e.clientY - bounds.top) * canvas[0].height / bounds.height
+                };
+            }
 
-        var opts = {
-            seed: {
-                x: width / 2 - 20,
-                color: "rgb(190, 26, 37)",
-                scale: 2
-            },
-            branch: [
-                [535, 680, 570, 250, 500, 200, 30, 100, [
-                    [540, 500, 455, 417, 340, 400, 13, 100, [
-                        [450, 435, 434, 430, 394, 395, 2, 40]
-                    ]],
-                    [550, 445, 600, 356, 680, 345, 12, 100, [
-                        [578, 400, 648, 409, 661, 426, 3, 80]
-                    ]],
-                    [539, 281, 537, 248, 534, 217, 3, 40],
-                    [546, 397, 413, 247, 328, 244, 9, 80, [
-                        [427, 286, 383, 253, 371, 205, 2, 40],
-                        [498, 345, 435, 315, 395, 330, 4, 60]
-                    ]],
-                    [546, 357, 608, 252, 678, 221, 6, 100, [
-                        [590, 293, 646, 277, 648, 271, 2, 80]
+            var opts = {
+                seed: {
+                    x: width / 2 - 20,
+                    color: "rgb(190, 26, 37)",
+                    scale: 2
+                },
+                branch: [
+                    [535, 680, 570, 250, 500, 200, 30, 100, [
+                        [540, 500, 455, 417, 340, 400, 13, 100, [
+                            [450, 435, 434, 430, 394, 395, 2, 40]
+                        ]],
+                        [550, 445, 600, 356, 680, 345, 12, 100, [
+                            [578, 400, 648, 409, 661, 426, 3, 80]
+                        ]],
+                        [539, 281, 537, 248, 534, 217, 3, 40],
+                        [546, 397, 413, 247, 328, 244, 9, 80, [
+                            [427, 286, 383, 253, 371, 205, 2, 40],
+                            [498, 345, 435, 315, 395, 330, 4, 60]
+                        ]],
+                        [546, 357, 608, 252, 678, 221, 6, 100, [
+                            [590, 293, 646, 277, 648, 271, 2, 80]
+                        ]]
                     ]]
-                ]]
-            ],
-            bloom: {
-                num: 700,
-                width: 1080,
-                height: 650,
-            },
-            footer: {
-                width: 1200,
-                height: 5,
-                speed: 10,
+                ],
+                bloom: {
+                    num: 700,
+                    width: 1080,
+                    height: 650,
+                },
+                footer: {
+                    width: 1200,
+                    height: 5,
+                    speed: 10,
+                }
             }
-        }
 
-        var tree = new Tree(canvas[0], width, height, opts);
-        var seed = tree.seed;
-        var foot = tree.footer;
-        var hold = 1;
-        var motionBatch = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 64 : 1;
+            var tree = new Tree(canvas[0], width, height, opts);
+            var seed = tree.seed;
+            var foot = tree.footer;
+            var hold = 1;
+            var motionBatch = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 64 : 1;
 
-        function activateHeart() {
-            if (!hold) return;
-            hold = 0;
-            canvas.unbind("click");
-            canvas.unbind("mousemove");
-            canvas.removeClass('hand');
-            canvas[0].removeEventListener("keydown", onCanvasKey);
-            window.dispatchEvent(new CustomEvent("birthday:heart-open"));
-        }
-
-        function onCanvasKey(e) {
-            if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                activateHeart();
+            function activateHeart() {
+                if (!hold) return;
+                hold = 0;
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+                canvas[0].removeEventListener("keydown", onCanvasKey);
+                window.dispatchEvent(new CustomEvent("birthday:heart-open"));
             }
-        }
 
-        function bindHeartInteraction() {
-            canvas.click(function(e) {
-            var point = canvasPoint(e);
-            if (seed.hover(point.x, point.y)) {
+            function onCanvasKey(e) {
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
                     activateHeart();
                 }
-            }).mousemove(function(e) {
-                var point = canvasPoint(e);
-                canvas.toggleClass('hand', seed.hover(point.x, point.y));
-            });
-            canvas[0].addEventListener("keydown", onCanvasKey);
-        }
-
-        bindHeartInteraction();
-
-        var seedAnimate = eval(Jscex.compile("async", function () {
-            seed.draw();
-            while (hold) {
-                $await(Jscex.Async.sleep(10));
             }
-            while (seed.canScale()) {
-                for (var scaleStep = 0; scaleStep < motionBatch && seed.canScale(); scaleStep++) {
-                    seed.scale(0.95);
-                }
-                $await(Jscex.Async.sleep(10));
+
+            function bindHeartInteraction() {
+                canvas.click(function (e) {
+                    var point = canvasPoint(e);
+                    if (seed.hover(point.x, point.y)) {
+                        activateHeart();
+                    }
+                }).mousemove(function (e) {
+                    var point = canvasPoint(e);
+                    canvas.toggleClass('hand', seed.hover(point.x, point.y));
+                });
+                canvas[0].addEventListener("keydown", onCanvasKey);
             }
-            while (seed.canMove()) {
-                for (var seedStep = 0; seedStep < motionBatch && seed.canMove(); seedStep++) {
-                    seed.move(0, 2);
-                    foot.draw();
-                }
-                $await(Jscex.Async.sleep(10));
-            }
-        }));
 
-        var growAnimate = eval(Jscex.compile("async", function () {
-            do {
-                for (var growStep = 0; growStep < motionBatch && tree.canGrow(); growStep++) {
-                    tree.grow();
-                }
-                $await(Jscex.Async.sleep(10));
-            } while (tree.canGrow());
-        }));
+            bindHeartInteraction();
 
-        var flowAnimate = eval(Jscex.compile("async", function () {
-            do {
-                for (var flowerStep = 0; flowerStep < motionBatch; flowerStep++) {
-                    tree.flower(2);
-                }
-                $await(Jscex.Async.sleep(10));
-            } while (tree.canFlower());
-        }));
-
-        var moveAnimate = eval(Jscex.compile("async", function () {
-            tree.snapshot("p1", 240, 0, 610, 680);
-            var moving = true;
-            while (moving) {
-                var moveSteps = 0;
-                do {
-                    moving = tree.move("p1", 500, 0);
-                    if (moving) foot.draw();
-                    moveSteps++;
-                } while (moving && moveSteps < motionBatch);
-                if (moving) {
+            var seedAnimate = eval(Jscex.compile("async", function () {
+                seed.draw();
+                while (hold) {
                     $await(Jscex.Async.sleep(10));
                 }
-            }
-            foot.draw();
-            tree.snapshot("p2", 500, 0, 610, 680);
+                while (seed.canScale()) {
+                    for (var scaleStep = 0; scaleStep < motionBatch && seed.canScale(); scaleStep++) {
+                        seed.scale(0.95);
+                    }
+                    $await(Jscex.Async.sleep(10));
+                }
+                while (seed.canMove()) {
+                    for (var seedStep = 0; seedStep < motionBatch && seed.canMove(); seedStep++) {
+                        seed.move(0, 2);
+                        foot.draw();
+                    }
+                    $await(Jscex.Async.sleep(10));
+                }
+            }));
 
-            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
-            canvas.css("background", "#ffe");
-            $await(Jscex.Async.sleep(300));
-            canvas.css("background", "none");
-        }));
+            var growAnimate = eval(Jscex.compile("async", function () {
+                do {
+                    for (var growStep = 0; growStep < motionBatch && tree.canGrow(); growStep++) {
+                        tree.grow();
+                    }
+                    $await(Jscex.Async.sleep(10));
+                } while (tree.canGrow());
+            }));
 
-        var textAnimate = eval(Jscex.compile("async", function () {
-            $("#code").show();
-            window.dispatchEvent(new CustomEvent("birthday:message-ready"));
-        }));
+            var flowAnimate = eval(Jscex.compile("async", function () {
+                do {
+                    for (var flowerStep = 0; flowerStep < motionBatch; flowerStep++) {
+                        tree.flower(2);
+                    }
+                    $await(Jscex.Async.sleep(10));
+                } while (tree.canFlower());
+            }));
 
-        var runAsync = eval(Jscex.compile("async", function () {
-            $await(seedAnimate());
-            $await(growAnimate());
-            $await(flowAnimate());
-            $await(moveAnimate());
-            textAnimate().start();
-        }));
+            var moveAnimate = eval(Jscex.compile("async", function () {
+                tree.snapshot("p1", 240, 0, 610, 680);
+                var moving = true;
+                while (moving) {
+                    var moveSteps = 0;
+                    do {
+                        moving = tree.move("p1", 500, 0);
+                        if (moving) foot.draw();
+                        moveSteps++;
+                    } while (moving && moveSteps < motionBatch);
+                    if (moving) {
+                        $await(Jscex.Async.sleep(10));
+                    }
+                }
+                foot.draw();
+                tree.snapshot("p2", 500, 0, 610, 680);
 
-        runAsync().start();
+                canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+                canvas.css("background", "#ffe");
+                $await(Jscex.Async.sleep(300));
+                canvas.css("background", "none");
+            }));
 
-        window.restartBirthdayTree = function() {
-            canvas.unbind("click");
-            canvas.unbind("mousemove");
-            canvas[0].removeEventListener("keydown", onCanvasKey);
-            hold = 1;
-            canvas[0].width = width;
-            canvas[0].height = height;
-            canvas.css("background", "none");
-            canvas.parent().css("background", "");
-            tree = new Tree(canvas[0], width, height, opts);
-            seed = tree.seed;
-            foot = tree.footer;
-            bindHeartInteraction();
+            var textAnimate = eval(Jscex.compile("async", function () {
+                $("#code").show();
+                window.dispatchEvent(new CustomEvent("birthday:message-ready"));
+            }));
+
+            var runAsync = eval(Jscex.compile("async", function () {
+                $await(seedAnimate());
+                $await(growAnimate());
+                $await(flowAnimate());
+                $await(moveAnimate());
+                textAnimate().start();
+            }));
+
             runAsync().start();
-        };
-    })();
+
+            window.restartBirthdayTree = function () {
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas[0].removeEventListener("keydown", onCanvasKey);
+                hold = 1;
+                canvas[0].width = width;
+                canvas[0].height = height;
+                canvas.css("background", "none");
+                canvas.parent().css("background", "");
+                tree = new Tree(canvas[0], width, height, opts);
+                seed = tree.seed;
+                foot = tree.footer;
+                bindHeartInteraction();
+                runAsync().start();
+            };
+        })();
     </script>
     <script type="text/javascript" src="file/experience.js" charset="utf-8"></script>
 </body>
+
 </html>
