@@ -1,18 +1,5 @@
 
 
-// variables
-var $win = $(window);
-var clientWidth = $win.width();
-var clientHeight = $win.height();
-
-$(window).resize(function() {
-    var newWidth = $win.width();
-    var newHeight = $win.height();
-    if (newWidth != clientWidth && newHeight != clientHeight) {
-        location.replace(location);
-    }
-});
-
 (function($) {
 	$.fn.typewriter = function() {
 		this.each(function() {
@@ -53,7 +40,7 @@ function timeElapse(date){
 	if (seconds < 10) {
 		seconds = "0" + seconds;
 	}
-	var result = "Days <span class=\"digit\">" + days + "</span> Hours <span class=\"digit\">" + hours + "</span> Minutes <span class=\"digit\">" + minutes; 
+	var result = "Days <span class=\"digit\">" + days + "</span> Hours <span class=\"digit\">" + hours + "</span> Minutes <span class=\"digit\">" + minutes;
 	$("#clock").html(result);
 
 	var text = "THE WORLD JUST GOT LUCKIER SINCE ";

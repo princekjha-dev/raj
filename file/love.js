@@ -464,7 +464,7 @@
         	ctx.arc(p.x, p.y, s.radius, 0, 2 * Math.PI);
         	ctx.closePath();
         	ctx.fill();
-        	// ctx.restore();
+        	ctx.restore();
         }
     }
 
@@ -997,7 +997,7 @@
         	ctx.arc(p.x, p.y, s.radius, 0, 2 * Math.PI);
         	ctx.closePath();
         	ctx.fill();
-        	// ctx.restore();
+        	ctx.restore();
         }
     }
 
